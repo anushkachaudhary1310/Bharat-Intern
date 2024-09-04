@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Unsuccessful</title>
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.unsuccess-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.unsuccess-message {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.unsuccess-message h1 {
+    color: #dc3545; /* Red color for error */
+    margin-bottom: 20px;
+}
+
+.unsuccess-message p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.button {
+    text-decoration: none;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin: 5px;
+}
+
+.button-alt {
+    background-color: #dc3545; /* Red color for error */
+}
+
+.button:hover {
+    background-color: #218838;
+}
+
+.button-alt:hover {
+    background-color: #c82333;
+}
+
+    </style>
+</head>
+<body>
+    <div class="unsuccess-container">
+        <div class="unsuccess-message">
+            <h1>Registration Unsuccessful</h1>
+            <p>The user is already in the database. Please try logging in or use a different email to register.</p>
+            <button onclick="window.location.href = '/';" class="button">Go to Registration</button>
+            <!-- <a href="index.html" class="button">Go To Registration</a> -->
+            <button onclick="window.location.href = '/shutdown';" class="button button-alt">End Registration</button>
+            <!-- <a href="register.html" class="button button-alt">End Registration</a> -->
+        </div>
+    </div>
+</body>
+</html>
